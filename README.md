@@ -1,0 +1,1 @@
+Various examples for inheritance in Scala and Java
