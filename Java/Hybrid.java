@@ -1,9 +1,8 @@
 class Hybrid {
   public static void main(String[] args) {
       Cat cat = new Cat();
-      cat.eat();
-      System.out.println("Cat breed is " + cat.breed); //Output: "Cat breed is orange"
-      System.out.println("Cat eye colour is " + cat.eyeColour); //Output: "Cat eye colour is green"
+      cat.eat(); //Output: "Cat is eating..."
+      cat.pet(); //Output: "Purr..."
       System.out.println("Cat is the same as Animal? " + Cat.class.equals(Animal.class)); //Output: "Cat is the same as Animal? false"
       System.out.println("Cat is an Animal? " + (cat instanceof Animal)); //Output: "Cat is an Animal? true"
   }
@@ -17,17 +16,16 @@ class Animal {
     }
 }
 
-interface Orange {
-    String breed = "orange";
+interface Pet {
+    void pet();
 }
-
-interface GreenEyes {
-    String eyeColour = "green";
-}
-
-class Cat extends Animal implements Orange, GreenEyes {
+class Cat extends Animal implements Pet {
     Cat() {
         this.name = "Cat";
+    }
+
+    public void pet() {
+        System.out.println("Purr...");
     }
 
     void meow() {
