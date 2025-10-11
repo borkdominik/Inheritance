@@ -1,6 +1,5 @@
 class Animal {
     def name: String = "Animal"
-
     def eat(): Unit = {
         println(name + " is eating...")
     }
@@ -8,7 +7,6 @@ class Animal {
 
 class Cat extends Animal {
     override def name: String = "Cat"
-
     def meow(): Unit = {
         println("Meow!")
     }
@@ -16,7 +14,6 @@ class Cat extends Animal {
 
 class Dog extends Animal {
     override def name: String = "Dog"
-
     def bark(): Unit = {
         println("Woof!")
     }
