@@ -19,26 +19,20 @@ class Multilevel {
 
 class Animal {
     String name = "Animal";
-
     void eat() {
         System.out.println(name + " is eating...");
     }
 }
 
 class Mammal extends Animal {
-    public Mammal() {
-        this.name = "Mammal";
-    }
+    public Mammal() {this.name = "Mammal";}
     void shed() {
         System.out.println("Shedding fur...");
     }
 }
 
 class Cat extends Mammal {
-    public Cat() {
-        this.name = "Cat";
-    }
-
+    public Cat() {this.name = "Cat";}
     void meow() {
         System.out.println("Meow!");
     }

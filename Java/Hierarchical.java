@@ -18,27 +18,20 @@ class Hierarchical {
 
 class Animal {
     String name = "Animal";
-
     void eat() {
         System.out.println(name + " is eating...");
     }
 }
 
 class Cat extends Animal {
-    public Cat() {
-        this.name = "Cat";
-    }
-
+    public Cat() {this.name = "Cat";}
     void meow() {
         System.out.println("Meow!");
     }
 }
 
 class Dog extends Animal {
-    public Dog() {
-        this.name = "Dog";
-    }
-
+    public Dog() {this.name = "Dog";}
     void bark() {
         System.out.println("Woof!");
     }

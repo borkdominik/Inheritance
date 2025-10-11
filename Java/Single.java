@@ -13,18 +13,10 @@ class Single {
 
 class Animal {
     String name = "Animal";
-
-    void eat() {
-        System.out.println(name + " is eating...");
-    }
+    void eat() {System.out.println(name + " is eating...");}
 }
 
 class Cat extends Animal {
-    Cat() {
-        this.name = "Cat";
-    }
-    
-    void meow() {
-        System.out.println("Meow!");
-    }
+    Cat() {this.name = "Cat";}
+    void meow() {System.out.println("Meow!");}
 }
