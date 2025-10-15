@@ -8,8 +8,13 @@ class Hybrid {
     cat.pet(); //Output: "Purr..."
     cat.meow(); //Output: "Meow!"
 
-    System.out.println("Cat is an Animal? " + (cat instanceof Animal)); //Output: "Cat is an Animal? true"
-    System.out.println("Cat is a Pet? " + (cat instanceof Pet)); //Output: "Cat is a Pet? true"
+    System.out.println(
+        "Cat is an Animal? " + (cat instanceof Animal)
+        ); //Output: "Cat is an Animal? true"
+        
+    System.out.println(
+        "Cat is a Pet? " + (cat instanceof Pet)
+        ); //Output: "Cat is a Pet? true"
 
     System.out.println("Cat is the same as Animal? " + Cat.class.equals(Animal.class)); //Output: "Cat is the same as Animal? false"
     System.out.println("Cat is the same as Pet? " + Cat.class.equals(Pet.class)); //Output: "Cat is the same as Pet? false"
