@@ -7,9 +7,11 @@ class HybridDiamond {
         catDog.eat(); //Output: "Animal is eating..."
         catDog.meow(); //Output: "Cat: Meow"
         catDog.bark(); //Output: "Dog: Woof"
-
-        //System.out.println(catDog.name); // would cause a compile-time error due to ambiguity, as it is defined in both Cat and Dog
-
+        
+        //System.out.println(catDog.name); 
+        //This would cause an error due to ambiguity, 
+        //  as it is defined in both Cat and Dog
+        
     }
 }
 

@@ -24,7 +24,9 @@ class CatDog extends Cat with Dog {
 
 @main def main(): Unit = {
     val catDog = new CatDog
-    println(catDog.name) // Output: Dog, because Dog is the last trait mixed in and therefore overwrites previous definitions
+    println(catDog.name) // Output: Dog
+    //Dog is the last trait mixed in and 
+    //therefore overwrites previous definitions
     catDog.eat() // Output: Dog is eating...
     catDog.meow() // Output: Meow!
     catDog.bark() // Output: Woof!
