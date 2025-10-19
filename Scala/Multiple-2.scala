@@ -1,6 +1,6 @@
 trait Pet(){
     def name: String = "Pet"
-    def pet(): Unit {
+    def pet(): Unit = {
         println(name + " is a pet.")
     }
 }
@@ -10,13 +10,14 @@ trait Animal {
     def eat(): Unit = {
         println(name + " is eating...")
     }
-    override def pet(): Unit {
+    def pet(): Unit = {
         println(name + " is an animal.")
     }
 }
 
 class Cat extends Animal with Pet {
     override def name: String = "Cat"
+    override def pet() = super.pet()
     def meow(): Unit = {
         println("Meow!")
     }
