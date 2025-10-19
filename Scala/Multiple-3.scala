@@ -17,10 +17,10 @@ trait Animal {
 
 class Cat extends Pet with Animal {
     override def name: String = "Cat"
+    override def pet() = super.pet()
     def meow(): Unit = {
         println("Meow!")
     }
-    override def pet() = super.pet()
 }
 
 @main def main(): Unit = {
